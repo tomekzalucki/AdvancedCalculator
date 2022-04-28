@@ -8,5 +8,6 @@ namespace AdvancedCalculator.Infrastucture.Calculators
 {
     internal class AdvancedCaclulator : BaseCalculator
     {
+
     }
 }
