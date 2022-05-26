@@ -18,15 +18,11 @@ namespace AdvancedCalculator.Infrastucture.Calculators
                     break;
                 }
             }
-            if (isPrime)  
-                
-                return true;
-            
-            else            
 
-                return false;   
-            
-            
+            if (isPrime)                  
+                return true;           
+            else            
+                return false;                         
         }
     }
 }
