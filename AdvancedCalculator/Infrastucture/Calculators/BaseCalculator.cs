@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdvancedCalculator.Infrastucture.Calculators
 {
-    internal class BaseCalculator
+    public class BaseCalculator
     {
         public int Addition(int number1, int number2) => number1 + number2;
         public int Subtraction(int number1, int number2) => number1 - number2;
