@@ -24,5 +24,16 @@ namespace AdvancedCalculator.Infrastucture.Calculators
             else            
                 return false;                         
         }
+
+        public int Factorial(int number)
+        {
+            int ResultFactorial = 1;
+            for (int i = 1; i <= number; i++)
+            {
+                ResultFactorial = ResultFactorial * i;  
+            }
+
+            return ResultFactorial; 
+        }
     }
 }
