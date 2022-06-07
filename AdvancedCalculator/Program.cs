@@ -1,4 +1,4 @@
 ﻿using AdvancedCalculator.Infrastucture.Calculators;
 
 var expandedCalculator = new ExpandedCaclulator();
-Console.WriteLine(expandedCalculator.PrimeNumber(10));    
+Console.WriteLine(expandedCalculator.PerfectNumber(495));    
