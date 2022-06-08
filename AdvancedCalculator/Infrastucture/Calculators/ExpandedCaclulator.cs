@@ -64,5 +64,22 @@ namespace AdvancedCalculator.Infrastucture.Calculators
                 return false;
             
         }
+        public int ArrayMean()
+        {
+            int result = 0;
+            int[] Array1 = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                Array1[i] = Convert.ToInt32(Console.ReadLine());
+            }         
+            for (int i = 0; i < 10; i++)
+            {
+                result += Array1[i];
+            }    
+            result = result / 10;  
+            
+            return result;
+        }
+
     }
 }
