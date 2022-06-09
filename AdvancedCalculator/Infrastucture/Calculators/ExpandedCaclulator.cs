@@ -27,13 +27,42 @@ namespace AdvancedCalculator.Infrastucture.Calculators
 
         public int Factorial(int number)
         {
-            int ResultFactorial = 1;
+            int result = 1;
             for (int i = 1; i <= number; i++)
             {
-                ResultFactorial = ResultFactorial * i;  
+                result = result * i;  
             }
 
-            return ResultFactorial; 
+            return result; 
+        }
+
+        public int PowerOfNumber(int baseNum, int exponent)
+        {
+            int result = 1;    
+            for (int i = 1; i <= exponent; i++)
+            {
+                result = result * baseNum;
+            }
+
+            return result;
+        }
+
+        public bool PerfectNumber(int number)
+        {
+            int result = 0;
+            for(int i = 1; i < number; i++)
+            {
+                if(number % i == 0)
+                {
+                    result = result + i;
+                }              
+            }
+
+            if (number == result)
+                return true;
+            else
+                return false;
+            
         }
 
         public int PowerOfNumber(int Base, int Exponent)
