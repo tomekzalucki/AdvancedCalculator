@@ -64,21 +64,20 @@ namespace AdvancedCalculator.Infrastucture.Calculators
                 return false;
             
         }
-        public int ArrayMean()
+        public int AverageOfNumbersArray(int arry)
         {
-            int result = 0;
-            int[] Array1 = new int[10];
+            int[] array1 = new int[10];
             for (int i = 0; i < 10; i++)
             {
-                Array1[i] = Convert.ToInt32(Console.ReadLine());
-            }         
-            for (int i = 0; i < 10; i++)
-            {
-                result += Array1[i];
+                array1[i] = arry;
             }    
-            result = result / 10;  
             
-            return result;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine(array1[i]);
+            } 
+            return array1[10];  
+               
         }
 
     }
