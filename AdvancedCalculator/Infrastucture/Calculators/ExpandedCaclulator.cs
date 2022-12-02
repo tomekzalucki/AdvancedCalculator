@@ -78,5 +78,16 @@ namespace AdvancedCalculator.Infrastucture.Calculators
 
         }
 
+
+        public int PowerOfNumber(int Base, int Exponent)
+        {
+            int ResultPowerOfNumber = 1;    
+            for (int i = 1; i <= Exponent; i++)
+            {
+                ResultPowerOfNumber = ResultPowerOfNumber * Base;
+            }
+
+            return ResultPowerOfNumber;
+        }
     }
 }
