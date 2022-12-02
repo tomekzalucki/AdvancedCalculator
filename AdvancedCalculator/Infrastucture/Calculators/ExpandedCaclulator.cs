@@ -64,20 +64,18 @@ namespace AdvancedCalculator.Infrastucture.Calculators
                 return false;
             
         }
-        public int AverageOfNumbersArray(int arry)
+        public int GetAvgNumberFromArray(int[] value)
         {
-            int[] array1 = new int[10];
-            for (int i = 0; i < 10; i++)
+           
+            int sum = 0;
+            for (int i = 0; i < value.Length; i++)
             {
-                array1[i] = arry;
-            }    
-            
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(array1[i]);
-            } 
-            return array1[10];  
-               
+                sum += value[i];
+            }
+           
+            return sum/value.Length; 
+
+
         }
 
     }
