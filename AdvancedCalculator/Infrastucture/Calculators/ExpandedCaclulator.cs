@@ -64,16 +64,17 @@ namespace AdvancedCalculator.Infrastucture.Calculators
                 return false;
             
         }
-
-        public int PowerOfNumber(int Base, int Exponent)
-        {
-            int ResultPowerOfNumber = 1;    
-            for (int i = 1; i <= Exponent; i++)
+        public int GetAvgNumberFromArray(int[] value)
+        {          
+            int sum = 0;
+            for (int i = 0; i < value.Length; i++)
             {
-                ResultPowerOfNumber = ResultPowerOfNumber * Base;
+                sum += value[i];
             }
-
-            return ResultPowerOfNumber;
+            
+            return sum/value.Length;
+           
         }
+
     }
 }
